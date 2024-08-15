@@ -1,7 +1,7 @@
 `use strict`;
 function checkForSpam(message) {
    const lowerCaseMessage = message.toLowerCase();
-    if (lowerCaseMessage.indexOf('spam') || lowerCaseMessage.indexOf('sale')) {
+    if (lowerCaseMessage.indexOf('spam') !== -1 || lowerCaseMessage.indexOf('sale') !== -1) {
         return true;
     } else {
         return false;
